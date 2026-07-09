@@ -35,7 +35,6 @@ const handleLogin = () => {
   const userInput = passwordInput.value.trim(); 
   
   // btoa() คือฟังก์ชันแปลงข้อความของเบราว์เซอร์
-  // คำว่า "MTkxNTEy" คือเลข 191512 ที่ถูกแปลงร่างเพื่อซ่อนไว้แล้ว (ถ้าคนมาดูโค้ดก็จะไม่รู้)
   if (btoa(userInput) === "MTkxNTEy") { 
     localStorage.setItem('isLoggedIn', 'true'); 
     passwordInput.value = ''; 
